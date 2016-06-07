@@ -1,0 +1,10 @@
+POLIMORFISMOS:
+
+- Sobrecarga:
+	Pode ser observado no construtor da classe Editor, onde este pode receber um ou nenhum parâmetro.
+
+- Coerção
+	Pode ser observado no método calcArea() da classe Circulo, onde ou inteiro é tratado como um tipo float na multiplicação por um tipo float.
+
+- Inclusão
+	Todas as classes que extendem a classe Figura podem utilizar o método mover da classe Figura
