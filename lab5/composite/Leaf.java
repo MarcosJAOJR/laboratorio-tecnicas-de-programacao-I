@@ -1,6 +1,8 @@
+package composite;
+
 public class Leaf extends Expression {
 
-  Leaf(Double pValue) {
+  public Leaf(Double pValue) {
     this.value = pValue;
   }
 

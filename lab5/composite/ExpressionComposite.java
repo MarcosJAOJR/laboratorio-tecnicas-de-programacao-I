@@ -1,3 +1,5 @@
+package composite;
+
 public class ExpressionComposite extends Expression {
 
   private Expression child1;
@@ -5,7 +7,7 @@ public class ExpressionComposite extends Expression {
 
   private String operator;
 
-  ExpressionComposite(String pOperator) {
+  public ExpressionComposite(String pOperator) {
     this.operator = pOperator;
   }
 

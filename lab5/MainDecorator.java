@@ -1,9 +1,12 @@
-public class MainExpression {
+import composite.*;
+import decorator.*;
+
+public class MainDecorator {
 
   public static void main(String[] args) {
 
     try {
-      // Expression -> (34/(1*((4*5)/23)))
+      // Expression -> sin(cos(34/(1*((4*5)/23))))
       ExpressionComposite m1 = new ExpressionComposite("*");
       m1.add(new Leaf(4.0d));
       m1.add(new Leaf(5.0d));
@@ -20,7 +23,11 @@ public class MainExpression {
       d2.add(new Leaf(34.0d));
       d2.add(m2);
 
-      System.out.println(d2.operation());
+      Expression expression = new Cos(d2);
+
+      expression = new Sin(expression);
+
+      System.out.println(expression.operation());
     }
     catch (Exception e) {
       System.out.println(e);

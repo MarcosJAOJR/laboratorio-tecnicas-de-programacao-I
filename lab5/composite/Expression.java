@@ -1,8 +1,10 @@
+package composite;
+
 public abstract class Expression {
 
-  protected Double value;
+  Double value;
 
-  public Double operation() {
+  public Double operation() throws Exception {
     return value;
   }
 
