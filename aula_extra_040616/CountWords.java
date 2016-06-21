@@ -2,30 +2,21 @@ import java.util.*;
 
 public abstract class CountWords {
 
-  private static TreeMap<String, Integer> wordsMap = new TreeMap<String, Integer>();
+  private static HashSet<String> wordsSet = new HashSet<String>();
 
-  public static void count(String text) {
-        String[] arr = text.split(" ");
-  }
-
-  public static TreeMap<String, Integer> frequency(String text[]) {
-
-    for (String item : text) {
-      int value = 0;
-
-      if (wordsMap.get(item) != null) {
-        value = wordsMap.get(item);
-      }
-
-      wordsMap.put(item, ++value);
+  public static void count(String[] arr) {
+    System.out.println("Total de Palavras: " + arr.length);
+    for (String palavra : arr) {
+      wordsSet.add(palavra);
     }
-
-    return wordsMap;
+    System.out.println("Total de Palavras Distintas: " + wordsSet.size());
   }
 
-  public static void main(String args[]){
-    System.out.println(CountWords.frequency(args));
+  public static void main(String[] args) {
+
+    System.out.println("Entre um texto");
+    Scanner entrada = new Scanner(System.in);
+    CountWords.count(entrada.nextLine().trim().split(" "));
 
   }
-
 }

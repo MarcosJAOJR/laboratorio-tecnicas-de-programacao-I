@@ -1,13 +1,13 @@
 import java.util.*;
 import java.util.Map.Entry;
 
-public abstract class WordFrequency2 {
+public abstract class WordFrequency3 {
 
   private static TreeMap<String, Integer> wordsMap = new TreeMap<String, Integer>();
 
   public static void orderedFrequency(String text[]) {
 
-    WordComparator comparator = new WordComparator();
+    WordDesComparator comparator = new WordDesComparator();
 
     wordsMap = new TreeMap<String, Integer>(comparator);
     wordsMap.putAll(WordFrequency.frequency(text));
@@ -20,7 +20,7 @@ public abstract class WordFrequency2 {
   public static void main(String args[]){
     System.out.println("Entre um texto");
     Scanner entrada = new Scanner(System.in);
-    WordFrequency2.orderedFrequency(entrada.nextLine().trim().split(" "));
+    WordFrequency3.orderedFrequency(entrada.nextLine().trim().split(" "));
 
   }
 }
