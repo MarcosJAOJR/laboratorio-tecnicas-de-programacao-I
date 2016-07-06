@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>br.com.lab8</groupId>
+	<artifactId>lab8</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>Random Gaussian</name>
+	<url>http://maven.apache.org</url>
+
+	<build>
+		<sourceDirectory>src</sourceDirectory>
+    </build>
+
+	<dependencies>
+		<dependency>
+			<groupId>jfree</groupId>
+			<artifactId>jfreechart</artifactId>
+			<version>1.0.9</version>
+		</dependency>
+		<dependency>
+		    <groupId>jcommon</groupId>
+		    <artifactId>jcommon</artifactId>
+		    <version>0.9.5</version>
+		</dependency>
+
+	</dependencies>
+</project>
